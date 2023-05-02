@@ -1,5 +1,5 @@
 import './styles/Header.scss';
-import blogdekoft_logo from '../assets/blogdekoft_logomark.png';
+import blogdekoft_logo from '../assets/img/blogdekoft_logomark.svg';
 
 export const Header = () => {
   return (
