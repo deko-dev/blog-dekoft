@@ -1,0 +1,101 @@
+.BlogItem {
+    width: 325px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    border-bottom: 5px solid #003AAB;
+    box-shadow: 0px 0px 10px rgba(27, 27, 27, 0.25);
+    overflow: hidden;
+    height: auto;
+    max-height: 500px;
+    .BlogItem__Info {
+        width: 100%;
+        order: 1;
+        padding: .25rem 2rem;
+        .Date__Blog {
+            font-size: 13px;
+            width: 100%;
+            display: inline-block;
+            text-align: end;
+            color: #B2B2B2;
+        }
+        .Description__Blog {
+            font-size: 14px;
+            font-weight: 300;
+            text-align: justify;
+            margin: .5rem auto;
+        }
+
+        .btn-read-more {
+            width: 100px;
+            height: 30px;
+            border: 1px solid #180C4B;
+            border-radius: 5px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem auto;
+        }
+    }
+    .BlogItem__Image {
+        width: 100%;
+        height: 200px;
+        order: 0;
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 720px) and (max-width: 1280px) { 
+    .BlogItem {
+        max-height: 650px;
+        .BlogItem__Info {
+            .Date__Blog {
+                font-size: 14px;
+                margin: .5rem 0;
+            }
+            .btn-read-more {
+                height: 35px;
+                margin: 1.25rem auto;
+            }
+        }
+        .BlogItem__Image {
+            height: 225px;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1920px) {
+    .BlogItem {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-left: 5px solid #003AAB;
+        border-bottom: none;
+        .BlogItem__Info {
+            width: 100%;
+            order: 0;
+            padding: .25rem 2rem;
+            .Date__Blog {
+                font-size: 13px;
+                text-align: start;
+            }
+            .btn-read-more {
+                margin: 1rem 0;
+                margin-right: auto;
+            }
+        }
+        .BlogItem__Image {
+            height: 300px;
+            order: 0;
+            margin-bottom: 0;
+        }
+    }    
+}
