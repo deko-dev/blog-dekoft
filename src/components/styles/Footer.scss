@@ -1,0 +1,98 @@
+.Footer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #BDBDBD;
+    background-color: #F1F1F1;
+    .Footer__Box {
+        width: 95%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .Footer__Box__Logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: 20px;
+            }
+        }
+
+        .Footer__Box__Credits {
+            margin-left: auto;
+            span {
+                font-size: 12px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 720px) and (max-width: 1280px) {
+    .Footer {
+        .Footer__Box {
+            align-items: center;
+            justify-content: start;
+            .Footer__Box__Logo {
+                width: 30px;
+                img {
+                    width: 30px;
+                }
+            }
+            .Footer__Box__Credits {
+                margin-left: auto;
+                span {
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1920px) {
+    .Footer {
+        .Footer__Box {
+            align-items: center;
+            justify-content: start;
+            .Footer__Box__Logo {
+                width: 30px;
+                img {
+                    width: 30px;
+                }
+            }
+            .Footer__Box__Credits {
+                margin-left: auto;
+                span {
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .Footer {
+        .Footer__Box {
+            align-items: center;
+            justify-content: start;
+            .Footer__Box__Logo {
+                width: 30px;
+                img {
+                    width: 30px;
+                }
+            }
+            .Footer__Box__Credits {
+                margin-left: auto;
+                span {
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

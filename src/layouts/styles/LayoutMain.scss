@@ -27,6 +27,8 @@ html {
 body {
     margin: 0;
     font-family: 'Podkova';
+    line-height: 1.5;
+    background-color: #F1F1F1;
 }
 
 /**
@@ -381,14 +383,30 @@ template {
     display: none;
 }
 
+li {
+    list-style: none;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+    list-style: none;
+    text-decoration: none;
+}
+
 .LayoutMain {
     width: 100vw;
+    max-width: 1480px;
     height: 100vh;
+    background-color: #F1F1F1;
+    margin: 0 auto;
 
     #LayoutContent {
-        width: 80%;
+        width: auto;
         height: 100%;
         padding: 2rem 4rem;
     }
 
-}   
+}

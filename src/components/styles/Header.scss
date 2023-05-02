@@ -1,17 +1,140 @@
 .Header {
     width: 100%;
-    height: 60px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid #BDBDBD;
+    padding-top: 1rem;
+    background-color: #F1F1F1;
     .Header__Box {
         width: 95%;
         height: 100%;
         display: flex;
         align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
         .Header__Box__Logo {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             img {
                 width: 160px;
+            }
+        }
+
+        .Header__Box__Options {
+            width: 100%;
+            ul {
+                padding: 0;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                li {
+                    width: calc(100% / 3);
+                    color: #180C4B;
+                    text-align: center;
+                    a {
+                        width: 60px;
+                        height: 40px;
+                        transition: .1s color;
+                        cursor: pointer;
+                        font-weight: 600;
+                        &:hover {
+                            color: #003AAB;
+                            border-bottom: 2px solid #003AAB;
+                        }
+                        &.active {
+                            color: #003AAB;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 720px) and (max-width: 1280px) {
+    .Header {
+        height: 70px;
+        padding: 0;
+        .Header__Box {
+            align-items: center;
+            justify-content: start;
+            .Header__Box__Logo {
+                width: 160px;
+                img {
+                    width: 160px;
+                }
+            }
+    
+            .Header__Box__Options {
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1920px) {
+    .Header {
+        height: 70px;
+        padding: 0;
+        .Header__Box {
+            align-items: center;
+            justify-content: start;
+            .Header__Box__Logo {
+                width: 160px;
+                img {
+                    width: 160px;
+                }
+            }
+    
+            .Header__Box__Options {
+                width: calc(100% - 240px);
+                margin: 0 auto;
+                ul {
+                    margin-left: auto;
+                    width: 25%;
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
+                    li {
+                        a {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .Header {
+        height: 70px;
+        padding: 0;
+        .Header__Box {
+            align-items: center;
+            justify-content: start;
+            .Header__Box__Logo {
+                width: 160px;
+                img {
+                    width: 160px;
+                }
+            }
+    
+            .Header__Box__Options {
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
             }
         }
     }

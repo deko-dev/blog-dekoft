@@ -1,9 +1,8 @@
-import { LayoutMain } from "./layouts/LayoutMain"
+import "./assets/styles/global.scss";
+import { LayoutMain } from "./layouts/LayoutMain";
 
 function App() {
-  return (
-    <LayoutMain />
-  )
+  return <LayoutMain />;
 }
 
-export default App
+export default App;
