@@ -1,6 +1,6 @@
 import './styles/Header.scss';
 import blogdekoft_logo from '../assets/img/blogdekoft_logomark.svg';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export const Header = () => {
   return (

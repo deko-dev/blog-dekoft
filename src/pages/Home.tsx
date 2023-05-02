@@ -1,11 +1,15 @@
 import { BlogItem } from '../components/BlogItem'
 import './styles/Home.scss'
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 export const Home = () => {
 
-  const [blogs, setBlogs] = useState([1, 2, 3, 4])
+  const [blogs, setBlogs] = useState([0])
 
+  useEffect(() => {
+    setBlogs([1, 2, 3, 4]);
+  }, [])
+  
 
   return (
     <div className="Home">
@@ -15,7 +19,7 @@ export const Home = () => {
         </div>
         <div className="Home__Box__Blogs">
           {
-            blogs.map( (blog, index) => <BlogItem key={index}/> )
+            blogs.map( (blog, index) => <BlogItem key={index} blog={blog}/> )
           }
         </div>
       </div>
